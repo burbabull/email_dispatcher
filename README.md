@@ -12,3 +12,18 @@ A general purpose email dispatcher and associated toolkit
 npm install
 
 node index.js
+
+# Test
+
+The emailCreator.js file is a utility to help you create new email templates. One already exists called tai_test.hbs.
+
+To create your own, you'll need to do 2 things.
+
+1. Edit data.js to include a data entry for your new email (without the extension). Copy the existing tai_test entry to verify
+2. Create the new email data file. Handlebars is the templating engine used here
+
+To compile your test emails, run:
+
+node emailCreator.js
+
+The files will be generated into the "tests" folder. Open with your browser to view.
