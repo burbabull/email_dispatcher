@@ -1,0 +1,37 @@
+{
+  "name": "email-dispatcher",
+  "version": "1.0.0",
+  "description": "A general purpose email sending package",
+  "main": "emailCreator.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node emailCreator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burbabull/email_dispatcher.git"
+  },
+  "keywords": [
+    "email",
+    "amazonSES",
+    "simple",
+    "email",
+    "service"
+  ],
+  "author": "Anthony Isaacson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burbabull/email_dispatcher/issues"
+  },
+  "homepage": "https://github.com/burbabull/email_dispatcher#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "handlebars": "^4.1.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "moment-recur": "^1.0.7",
+    "node-ses": "^2.2.0"
+  }
+}

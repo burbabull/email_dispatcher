@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%!important;
+            font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        .content {
+            width: 100%;
+            max-width: 600px;
+        }
+        /*
+            Fix for Apple Mail
+        */
+        @media only screen and (min-device-width: 601px) {
+            .content {
+                width: 600px !important;
+            }
+        }
+    </style>
+</head>
+<body yahoo style="width: 100%; max-width: 600px; margin: 0; padding: 0;">
+<table width="100%" style="padding: 20px; max-width: 600px;" border="0" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+        <td>
+            <!--
+                Support for Outlook and Locus
+            -->
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" style="max-width: 600px;" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                <tr>
+                    <td>
+            <![endif]-->
+            <table style="background-color: #fff; padding: 8px 0; max-width: 600px;" bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                <tr>
+                    <td style="padding: 2px 0 12px; font-size: 16px; color: #000000;">
+                        <p>{{#if name}}{{name}}{{else}}{{email}}{{/if}},</p>
+                        {{{content}}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding: 12px 25px; font-size: 12px; color: #999999; text-align: center;">
+                        <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">You have received this email to {{email}} because you registered at <a href="https://{{webBase}}.com">{{companyName}}</a>.</span>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+{{{emailtracking}}}
+</body>
+</html>
