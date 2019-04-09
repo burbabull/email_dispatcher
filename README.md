@@ -8,11 +8,11 @@ A general purpose email dispatcher and associated toolkit
 3. Edit index.js to send an email to your own email address (it's set to anthonyi1854@gmail.com - that's me!)
 
 # Run
-
+```
 npm install
 
 node index.js
-
+```
 # Test
 
 The emailCreator.js file is a utility to help you create new email templates. One already exists called tai_test.hbs.
@@ -23,7 +23,7 @@ To create your own, you'll need to do 2 things.
 2. Create the new email data file. Handlebars is the templating engine used here
 
 To compile your test emails, run:
-
+```
 node emailCreator.js
-
+```
 The files will be generated into the "tests" folder. Open with your browser to view.
